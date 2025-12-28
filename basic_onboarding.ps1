@@ -36,6 +36,9 @@ switch ($escolha) {
             Write-Host "Português BR instalado e configurado com sucesso!" -ForegroundColor Green
             Write-Host "AVISO: As mudanças terão efeito total após reiniciar." -ForegroundColor Magenta
         }
+        catch {
+            Write-Host "Erro ao instalar o idioma. Verifique a conexão com a internet." -ForegroundColor Red
+        }
     }
     
     "2" {
